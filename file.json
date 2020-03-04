@@ -1,0 +1,54 @@
+//JSON short for javascript object notation allow for an eassy to store human readable data which are store in form of 
+//object in javascript but are entirely different from javascript objct
+//the following data types are valid JSON types string(double qoute),number, array, object, boolean and null
+// JSON file are created with .json extension 
+
+
+//below is an exmple of JSON data format 
+
+var countries = {
+    "Nigeria" : "fct",
+    "India" : "New Dehli",
+    "Turkey": "Ankara",
+    "Australia" : "Sydney"
+}
+
+
+// json can also be represented as string 
+
+ var personalInfo = {
+     "name": "Hassan Muhammed",
+     "age": 23,
+     "sex": "Male",
+    "address" : [
+        { "country:": "Nigeria"},
+        { "state": "OSun"},
+        { "contact": 0907352726}
+    ] 
+    
+ }
+
+ // difference between javascript and JSON
+ //Json is created to work with any programming language while javascript a unique language on it own 
+ //they keys in javascript objects are not qouted unlike Json
+
+ // we use the dot notation or square bracket to access a json object value 
+
+ //example below
+
+var detail = personalInfo.name 
+ // returns Hassan Muhammed 
+// calling item from the json array
+ 
+var details = personalInfo.address[1].state
+
+//JSON.stringify() function is use to convert object to JSON string 
+//JSON.parse() function is use to convert string to JSON object
+
+//exmple
+
+var info = JSON.stringify(personalInfo) // convert JSON object to string format
+
+var Nvalue = JSON.parse(info) // convert string back to JSON object
+
+
