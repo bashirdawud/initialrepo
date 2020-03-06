@@ -47,8 +47,8 @@ var details = personalInfo.address[1].state
 
 //exmple
 
-var info = JSON.stringify(personalInfo) // convert JSON object to string format
+var convertToString = JSON.stringify(personalInfo) // convert JSON object to string format
 
-var Nvalue = JSON.parse(info) // convert string back to JSON object
+var convertToObject = JSON.parse(info) // convert string back to JSON object
 
 
