@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get("/", (req, res) => {
-    res.send("Hello Nodejs");
+    res.send("Hello World");
 })
 
 router.get("/health-check", (req, res) => {
