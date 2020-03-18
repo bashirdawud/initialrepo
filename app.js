@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const postRoute = require("./controller/route");
-dotenv.config()
+dotenv.config();
 
 
 app.get("/", postRoute)
