@@ -4,8 +4,10 @@ router.get("/", (req, res) => {
     res.send("Hello World");
 })
 
-router.get("/health-check", (req, res) => {
-    res.sendStatus(200);
-});
+router.get("/health-check", require('express-healthcheck')({
+    healthy : function(){
+        return { everything: 'is ok'};
+    }
+}));
 
 module.exports = router;
