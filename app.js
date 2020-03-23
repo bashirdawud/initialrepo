@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
-const postRoute = require("./controller/route");
+const postRouter = require("./controller/route");
 dotenv.config();
 
 
@@ -9,7 +9,7 @@ app.get("/", postRoute)
 
 // checking server status
 
-app.get("/health-check",postRoute);
+app.get("/health-check",postRouter);
 
 const port = process.env.PORT || 8080;
 
